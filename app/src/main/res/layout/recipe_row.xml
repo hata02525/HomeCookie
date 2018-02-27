@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_recipe"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_220"
+    android:layout_margin="@dimen/dp_5"
+    android:elevation="@dimen/dp_4"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220">
+        <ImageView
+            android:id="@+id/iv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:src="@drawable/sdfsdfa"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_5"
+            android:background="@color/primary_transparent">
+        <CheckBox
+            android:id="@+id/radio_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:button="@drawable/favorite_selector"/>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            android:layout_below="@+id/iv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:padding="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="Orange Melon Cups"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center|top" />
+            <RatingBar
+                android:id="@+id/rating_bar_recipe"
+                android:layout_below="@+id/tv_recipe_name"
+                android:background="@color/white"
+                style="@style/largeRatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="true"
+                android:stepSize="1" />
+        <RelativeLayout
+            android:layout_below="@id/rating_bar_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100">
+            <com.app.homecookie.Util.CircleImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@drawable/user"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"/>
+            <TextView
+                android:id="@+id/tv_poster_name"
+                android:layout_toRightOf="@+id/iv_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adam Nicolas"
+                android:textSize="@dimen/sp_10"
+                android:padding="@dimen/dp_5"/>
+            <TextView
+                android:id="@+id/tv_poster_dsc"
+                android:layout_below="@+id/tv_poster_name"
+                android:layout_toRightOf="@+id/iv_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adam Nicolas"
+                android:textSize="@dimen/sp_9"
+                android:padding="@dimen/dp_2"
+                android:layout_marginLeft="@dimen/dp_5"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

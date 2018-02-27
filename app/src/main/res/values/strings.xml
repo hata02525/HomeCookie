@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">HomeCookie</string>
+    <string name="help">
+        <u>Help?</u>
+    </string>
+    <string name="email_or_user_id">Email</string>
+    <string name="create_user_id">Create User Id</string>
+    <string name="enter_email">Enter Email Id</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">
+        <u>Forgot Password?</u>
+    </string>
+    <string name="terms">
+        <u>Terms of Uses</u>
+    </string>
+    <string name="create_profile">Create Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="skip">skip</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date of Birth</string>
+    <string name="occupation">Occupation (Optional)</string>
+    <string name="about_me">About Me (Optional)</string>
+    <string name="alphabate_only">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</string>
+    <string name="alphabat">0123456789.//ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz &amp;:-=+?</string>
+    <string name="numeric_only">0123456789</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="browse">Browse</string>
+    <string name="post">Post</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="my_recipes_1">My Recipes:</string>
+    <string name="groceries">Groceries</string>
+    <string name="home_cooks">Homecooks</string>
+
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sem a malesuada rhoncus. Pellentesque ut
+        dolor a dui porttitor porta lacinia non libero. Nunc volutpat arcu quis quam convallis molestie. Etiam ac
+        tristique sem, id commodo justo. Phasellus congue tincidunt lectus, at dignissim ligula maximus eu. Quisque
+        interdum nunc eget tellus bibendum suscipit. Phasellus feugiat ultricies posuere. Nullam porta accumsan velit,
+        ut rutrum massa fermentum eu. Nunc ac bibendum nunc. Mauris eu ultricies ipsum. Ut id dolor dui. Pellentesque
+        dictum dui vel tempus maximus. Vivamus non nisi quis libero scelerisque pretium. Ut eu tristique justo. Sed
+        pellentesque placerat quam, ut ultricies turpis feugiat a. Aliquam a volutpat risus.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">627432554132398</string>
+    <string name="category_list">Category List</string>
+    <string name="roast_amp_steaks"><![CDATA[Roast & Steaks]]></string>
+    <string name="all">All</string>
+    <string name="comments">Comments</string>
+    <string name="undo">Undo</string>
+    <string name="deleted">Deleted</string>
+    <string name="unit">Unit</string>
+    <string name="qty">Qty</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="ingredients">Ingredients: [+]</string>
+    <string name="instructions">Instructions: [+]</string>
+    <string name="comments_">Comments: [+]</string>
+    <string name="create_category">Create Category</string>
+    <string name="save">Save</string>
+    <string name="search_hint">search..</string>
+    <string name="clear_list">Clear List</string>
+    <string name="igredients">Ingredient :</string>
+    <string name="quantity">Quantity :</string>
+    <string name="units">Units :</string>
+    <string name="search">Search</string>
+    <string name="add">Add</string>
+    <string name="friend">Friend</string>
+    <string name="send_message">Send Message</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="meals">Meals</string>
+    <string name="lessons">Lessons</string>
+    <string name="donate">Donate</string>
+    <string name="location">Location</string>
+    <string name="add_new_lesson">Add New Lesson</string>
+    <string name="add_new_meal">Add New Meal</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="home">Home</string>
+    <string name="card_number">Card Number</string>
+    <string name="pay">Pay</string>
+    <string name="no_lesson_found_in_your_lesson_list">No Lesson Found in Your Lesson List</string>
+    <string name="edit">Edit</string>
+    <string name="report">Report</string>
+    <string name="del">Delete</string>
+    <string name="update">Update</string>
+    <string name="crash_toast_text">Crash Report is Sent to Developer Email</string>
+    <string name="chat">Chat</string>
+    <string name="follow">Follow</string>
+    <string name="my_meals">My Meals:</string>
+    <string name="my_lessons">My Lessons:</string>
+    <string name="logout">Logout</string>
+    <string name="post_a_meal">Post a meal</string>
+    <string name="post_a_recipe">Post a recipe</string>
+    <string name="post_a_lesson">Post a lesson</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="occupation_">Occupation:</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="choose_your_delivery_address">Choose Your Delivery Address</string>
+    <string name="payments">Payments</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="next">Next</string>
+    <string name="address">Address*</string>
+    <string name="name_req">Name*</string>
+    <string name="server">67.209.121.170</string>
+    <string name="filter">Filter</string>
+    <string name="popular">Popular</string>
+    <string name="rating">Rating</string>
+    <string name="newest">Newest</string>
+    <string name="nearme">Near me</string>
+    <string name="category">Category</string>
+    <string name="highest_rated">Highest Rated</string>
+    <string name="purchased">Purchased</string>
+    <string name="sample">
+        <u>
+            <b>Jordan87</b>
+        </u>
+        donated $1000 to
+        <u>
+            <b>MealsOnwheel</b>
+        </u>
+    </string>
+    <string name="sample1">
+        <u>
+            <b>Jordan87</b>
+        </u>
+        donated an Italian Roast Chicken Waffle recipe to
+        <u>
+            <b>Childern Wellfare Society</b>
+        </u>
+    </string>
+    <string name="reject">Reject</string>
+    <string name="delete">Delete</string>
+    <string name="accept">Accept</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+</resources>
+

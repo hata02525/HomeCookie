@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.app.homecookie.Util.swipe.SwipeRevealLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dragEdge="right"
+            app:mode="same_level">
+
+        <FrameLayout
+                android:id="@+id/delete_layout"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="Delete"
+                    android:textColor="@android:color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/recent_chat_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <com.app.homecookie.Util.CircleImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_margin="@dimen/dp_10"
+                        android:src="@drawable/user"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_10"
+                        android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+                        <TextView
+                                android:id="@+id/tv_user"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/dp_5"
+                                android:text="Adam Nicolas"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/sp_16"/>
+                        <ImageView
+                                android:id="@+id/iv_online"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:src="@drawable/ic_online"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tv_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="@dimen/dp_5"
+                            android:text="Hi, love your recipe. Could you share me how you made it?"
+                            android:textColor="@color/black_view"
+                            android:textSize="@dimen/sp_15"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.app.homecookie.Util.swipe.SwipeRevealLayout>
+</RelativeLayout>
+

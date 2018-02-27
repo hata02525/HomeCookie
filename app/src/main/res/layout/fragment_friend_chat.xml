@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.homecookie.Fragments.FriendChatFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_group"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/button_add_friend"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/button_add_friend"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Not Connected to the Internet \n Plese Try Again"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_add_friend"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingLeft="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg_drawable"
+        android:textSize="@dimen/sp_14"
+        android:text="Add HomeCookie Friend"
+        android:textColor="@drawable/button_bg_drawable"
+        android:textAllCaps="false"/>
+</RelativeLayout>

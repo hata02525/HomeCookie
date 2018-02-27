@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50">
+    <com.app.homecookie.Util.swipe.SwipeRevealLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <FrameLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_2"
+                android:orientation="horizontal"
+                android:background="@color/font_n_bg"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/tv_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="5 gms"
+                    android:layout_weight="40"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp_16"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_toRightOf="@+id/tv_qty"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="match_parent"
+                    android:text="Turmaric"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp_16"/>
+
+                <ImageView
+                    android:id="@+id/iv_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_info"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_alignParentRight="true"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.app.homecookie.Util.swipe.SwipeRevealLayout>
+</RelativeLayout>
+

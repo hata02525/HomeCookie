@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="DatePickerTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+                <item name="colorAccent">@color/colorAccent</item>
+                <item name="android:windowActionBar">false</item>
+                <item name="android:windowNoTitle">true</item>
+                <item name="android:background">@android:color/transparent</item>
+
+        </style>
+        <style name="largeRatingBarStyle" parent="@android:style/Widget.RatingBar">
+                <item name="android:progressDrawable">@drawable/rating_bar_drawable</item>
+                <item name="android:minHeight">15dip</item>
+                <item name="android:maxHeight">40dip</item>
+        </style>
+        <style name="CustomDialog" parent="android:Theme.Dialog">
+                <item name="android:windowIsTranslucent">true</item>
+                <item name="android:windowBackground">@android:color/transparent</item>
+        </style>
+</resources>

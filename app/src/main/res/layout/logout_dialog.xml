@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/font_n_bg"
+            android:textSize="@dimen/sp_20"
+            android:text="Logout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_drawable"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:text="Are You Sure to Logout?"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/sp_15" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/normal_drawable"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:text="OK"
+        android:textColor="@color/black_text" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/normal_drawable"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:text="Cancel"
+        android:textColor="@color/black_text" />
+</LinearLayout>
+
+
+</LinearLayout>

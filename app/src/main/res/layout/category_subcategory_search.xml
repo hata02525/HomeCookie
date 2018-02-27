@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_5">
+
+    <LinearLayout
+        android:id="@+id/rl_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/normal_drawable"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_categroy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Fried"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_16" />
+
+        <CheckBox
+            android:id="@+id/cb_choose_subcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_2"
+            android:button="@drawable/category_check_box_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_sub_category_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_category"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/child_recyclerView"
+        android:layout_below="@+id/rl_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>-->
+</RelativeLayout>

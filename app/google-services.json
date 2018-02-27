@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "204526098766",
+    "firebase_url": "https://home-cookie-163912.firebaseio.com",
+    "project_id": "home-cookie-163912",
+    "storage_bucket": "home-cookie-163912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204526098766:android:22224e883b2e51d7",
+        "android_client_info": {
+          "package_name": "com.app.homecookie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204526098766-oplmk7d9ahrd1epbrn8ldicqdnd72edi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "204526098766-hrb3hdipf4opkkhu6kv0rdilqmf4agvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsnG_jXEIN6xYFm2MWp0svdLWc0nw0kWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

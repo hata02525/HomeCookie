@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginRight="@dimen/dp_15">
+   <TextView
+       android:id="@+id/tv_donate_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample"
+        android:textSize="@dimen/sp_16"
+        android:layout_gravity="center_horizontal"
+       android:padding="@dimen/dp_5"/>
+    <TextView
+        android:id="@+id/tv_donate_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13/12/2017, 3:53 PM"
+        android:gravity="right"
+        android:textSize="@dimen/sp_14"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_5"/>
+
+    <TextView
+        android:id="@+id/tv_donate_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample1"
+        android:textSize="@dimen/sp_16"
+        android:lineSpacingExtra="@dimen/dp_1"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_35"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:id="@+id/ll_item">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_4">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_meal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        fresco:failureImage="@drawable/sdfsdfa"
+                        fresco:actualImageResource="@drawable/sdfsdfa"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/primary_transparent"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/radio_fav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@drawable/favorite_selector"
+                            android:focusable="false"
+                            android:focusableInTouchMode="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="vertical"
+                android:weightSum="110">
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/rating_bar_meal"
+                        style="@style/largeRatingBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@color/font_n_bg"
+                        android:isIndicator="true" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_meal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_top"
+                    android:layout_weight="20"
+                    android:text="Orange Melon Cups"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_recipe_name"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_lbl_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="Price:"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tv_price_per_pax"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_5"
+                        android:text="$300/pax"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_top"
+                    android:layout_weight="20"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="Waffle | Near Floride"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/tv_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll_top"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="60"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="Comments 971"
+                        android:textSize="@dimen/sp_10" />
+
+                    <ImageView
+                        android:id="@+id/iv_recipe"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:src="@mipmap/post" />
+
+                    <ImageView
+                        android:id="@+id/iv_delivery"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:src="@mipmap/send" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_donate_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13/12/2017, 3:53 PM"
+        android:gravity="right"
+        android:textSize="@dimen/sp_14"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_5"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:background="@color/font_n_bg">
+    <com.app.homecookie.Util.CircleImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/user"
+        android:scaleType="centerCrop"/>
+    <EditText
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:layout_toLeftOf="@+id/iv_options"
+        android:maxLines="2"
+        android:textSize="@dimen/sp_12"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:editable="false"
+        android:text="@string/com_facebook_smart_device_instructions"
+        android:textColor="@color/black_text"
+        android:padding="@dimen/dp_5"/>
+    <ImageView
+        android:id="@+id/iv_options"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:paddingLeft="@dimen/dp_15"
+        android:src="@mipmap/dottoogle"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/tv_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_comment"
+        android:layout_marginRight="@dimen/dp_24"
+        android:maxLines="2"
+        android:padding="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+        android:gravity="center_vertical"
+        android:text="13/12/2017, 03:33 AM"
+        android:textColor="@color/black_text"/>
+</RelativeLayout>

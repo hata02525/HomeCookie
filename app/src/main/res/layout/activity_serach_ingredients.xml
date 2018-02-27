@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.homecookie.Activity.SerachIngredientsActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/dp_4"
+        android:padding="@dimen/dp_5"
+        android:background="@drawable/edit_text_bg_1">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:layout_margin="@dimen/dp_5"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_toRightOf="@id/iv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/sp_18"
+            android:hint="Search..."
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_text"/>
+
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/lv_search"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>

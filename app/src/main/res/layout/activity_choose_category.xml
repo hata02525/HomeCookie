@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_n_bg"
+    tools:context="com.app.homecookie.Activity.ChooseCategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/dp_4">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp_10"
+            android:padding="@dimen/dp_15"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/choose_category"
+            android:textColor="@color/font_n_bg"
+            android:textSize="@dimen/sp_20" />
+        <TextView
+            android:id="@+id/tv_set_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Done"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/font_n_bg"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:id="@+id/ll_category_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recylerView"-->
+        <!--android:padding="@dimen/dp_5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/toolbar">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <!--<ExpandableListView-->
+    <!--android:padding="@dimen/dp_5"-->
+    <!--android:id="@+id/lv_category"-->
+    <!--android:layout_below="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:dividerHeight="@null"-->
+    <!--android:divider="@null"/>-->
+</RelativeLayout>

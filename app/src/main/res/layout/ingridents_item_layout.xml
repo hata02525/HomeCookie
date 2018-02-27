@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_120"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30">
+
+    <com.app.homecookie.Util.swipe.SwipeRevealLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <FrameLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_100"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_box"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_ingredients"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_80"
+                        android:padding="@dimen/dp_10"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cookies_1" />
+
+                    <TextView
+                        android:id="@+id/tv_ingredients_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="Green Coriender"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <EditText
+                        android:id="@+id/et_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:background="@null"
+                        android:digits="@string/numeric_only"
+                        android:gravity="center"
+                        android:hint="@string/qty"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="3"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_10"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:background="@color/black_text" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:drawableRight="@mipmap/dropdown"
+                        android:gravity="center"
+                        android:hint="@string/unit"
+                        android:textSize="@dimen/sp_15" />
+
+                    <Spinner
+                        android:id="@+id/spinner_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:drawableRight="@mipmap/dropdown"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                    </Spinner>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:background="@color/black_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.app.homecookie.Util.swipe.SwipeRevealLayout>
+</RelativeLayout>
+
